@@ -1,0 +1,231 @@
+/* Bofan Zhao — academic landing page
+   Plain CSS, system fonts only, no external assets. */
+
+:root {
+  --page-bg: #fdfdfc;
+  --surface-bg: #ffffff;
+  --text: #1b1b1b;
+  --text-muted: #4a4a4a;
+  --border: #d6d4cf;
+  --accent: #1a4f7a;
+  --accent-strong: #123a5a;
+  --notice-bg: #f5f4f1;
+  --separator: #8a8884;
+  --focus: #1b1b1b;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0 auto;
+  max-width: 44rem;
+  padding: 2.5rem 1.25rem 3rem;
+  background-color: var(--page-bg);
+  color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+  font-size: 1rem;
+  line-height: 1.65;
+  overflow-wrap: break-word;
+}
+
+h1,
+h2 {
+  line-height: 1.25;
+  margin: 0 0 0.5rem;
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 1.9rem;
+  letter-spacing: 0.01em;
+}
+
+h2 {
+  font-size: 1.25rem;
+}
+
+p {
+  margin: 0 0 1rem;
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
+}
+
+a:hover {
+  color: var(--accent-strong);
+}
+
+a:focus-visible,
+.button:focus-visible {
+  outline: 3px solid var(--focus);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+/* Header */
+
+.site-header {
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.tagline {
+  margin: 0;
+  color: var(--text-muted);
+  font-size: 1rem;
+}
+
+.tagline span {
+  color: var(--separator);
+  padding: 0 0.15em;
+}
+
+/* Sections */
+
+section,
+.resources {
+  margin-bottom: 2rem;
+}
+
+.expanded-name {
+  font-size: 1.05rem;
+  color: var(--text-muted);
+  margin-bottom: 1rem;
+}
+
+/* Launch button */
+
+.action {
+  margin: 1.5rem 0 0.5rem;
+}
+
+.button {
+  display: inline-block;
+  padding: 0.75rem 1.4rem;
+  background-color: var(--accent);
+  color: #ffffff;
+  border: 1px solid var(--accent-strong);
+  border-radius: 4px;
+  font-size: 1.05rem;
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+}
+
+.button:hover {
+  background-color: var(--accent-strong);
+  color: #ffffff;
+}
+
+.destination {
+  display: block;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+/* Research-use notice */
+
+.notice {
+  background-color: var(--notice-bg);
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--accent);
+  border-radius: 4px;
+  padding: 1.25rem 1.25rem 1.35rem;
+}
+
+.notice h2 {
+  font-size: 1.05rem;
+}
+
+.notice p {
+  margin-bottom: 0.75rem;
+}
+
+.notice p:last-child {
+  margin-bottom: 0;
+}
+
+/* Links list */
+
+.resources ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.resources li {
+  padding: 0.45rem 0;
+  border-bottom: 1px solid var(--border);
+}
+
+/* Enlarges the tap target without altering the compact text-link look. */
+.resources a {
+  display: inline-block;
+  padding: 0.2rem 0;
+}
+
+.resources li:first-child {
+  border-top: 1px solid var(--border);
+}
+
+/* Footer */
+
+.site-footer {
+  border-top: 1px solid var(--border);
+  padding-top: 1.25rem;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+.site-footer p {
+  margin-bottom: 0.25rem;
+}
+
+/* 404 page */
+
+.error-page .action {
+  margin-top: 1.25rem;
+}
+
+/* The page contains no meaningful motion; this is a safeguard only. */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+@media (max-width: 30rem) {
+  body {
+    padding: 2rem 1rem 2.5rem;
+  }
+
+  h1 {
+    font-size: 1.65rem;
+  }
+
+  .button {
+    display: block;
+    text-align: center;
+  }
+}
