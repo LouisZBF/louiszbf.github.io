@@ -1,12 +1,13 @@
 # louiszbf.github.io
 
 Personal academic homepage for Bofan Zhao, hosted with GitHub Pages. The site is a
-landing page for SPARK (Stratified Primary-care Assessment of Risk for Kidney
-Decline), a research-use calculator.
+landing page for PRIORE (kidney reassessment prioritisation), a calculator that
+estimates the likelihood of sustained kidney function decline over the next 3 years
+using information already available in the primary care record.
 
 - Public site: https://louiszbf.github.io/
-- SPARK application: https://spark-kidney-decline.streamlit.app
-- SPARK source code: https://github.com/LouisZBF/SPARK
+- PRIORE calculator: https://spark-kidney-decline.streamlit.app
+- PRIORE source code: https://github.com/LouisZBF/SPARK
 
 ## Contents
 
@@ -39,5 +40,6 @@ Pushing to `main` updates https://louiszbf.github.io/ ; no build step runs.
 
 ## Notice
 
-SPARK is for research use only. It is not a diagnostic, treatment, referral, or
-deployment-ready clinical decision-support tool.
+PRIORE is intended to support prioritisation of kidney assessment in primary care.
+It does not diagnose CKD and does not replace urine ACR testing or KFRE when these are
+indicated.

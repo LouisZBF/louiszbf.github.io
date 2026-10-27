@@ -3,14 +3,14 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Bofan Zhao | SPARK Kidney Risk Calculator</title>
-  <meta name="description" content="Academic landing page for SPARK, a research-use calculator for predicted 3-year risk of sustained eGFR decline in primary care.">
+  <title>Bofan Zhao | PRIORE Kidney Reassessment Prioritisation</title>
+  <meta name="description" content="Academic landing page for PRIORE, a calculator that estimates the likelihood of sustained kidney function decline over the next 3 years to support prioritisation of kidney reassessment in primary care.">
   <meta name="author" content="Bofan Zhao">
   <link rel="canonical" href="https://louiszbf.github.io/">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://louiszbf.github.io/">
-  <meta property="og:title" content="Bofan Zhao | SPARK Kidney Risk Calculator">
-  <meta property="og:description" content="Academic landing page for SPARK, a research-use calculator for predicted 3-year risk of sustained eGFR decline in primary care.">
+  <meta property="og:title" content="Bofan Zhao | PRIORE Kidney Reassessment Prioritisation">
+  <meta property="og:description" content="Academic landing page for PRIORE, a calculator that estimates the likelihood of sustained kidney function decline over the next 3 years to support prioritisation of kidney reassessment in primary care.">
   <meta property="og:locale" content="en_US">
   <link rel="stylesheet" href="styles.css">
 </head>
@@ -26,28 +26,32 @@
   </header>
 
   <main>
-    <section class="project" aria-labelledby="spark-heading">
-      <h2 id="spark-heading">SPARK</h2>
-      <p class="expanded-name">Stratified Primary-care Assessment of Risk for Kidney Decline</p>
+    <section class="project" aria-labelledby="priore-heading">
+      <h2 id="priore-heading">PRIORE</h2>
+      <p class="expanded-name">Kidney reassessment prioritisation</p>
       <p>
-        SPARK is a research-use calculator that estimates the predicted 3-year risk of
-        sustained 30% or greater eGFR decline using routinely available primary care
-        information without requiring albuminuria data.
+        PRIORE estimates the likelihood of sustained kidney function decline over the next
+        3 years using information already available in the primary care record. It does not
+        require a urine albumin-to-creatinine ratio (ACR) result.
       </p>
       <p class="action">
-        <a class="button" href="https://spark-kidney-decline.streamlit.app" aria-describedby="launch-destination">Launch SPARK Calculator</a>
+        <a class="button" href="https://spark-kidney-decline.streamlit.app" aria-describedby="launch-destination">Open the PRIORE calculator</a>
       </p>
       <p class="destination" id="launch-destination">
-        Opens the SPARK application hosted at spark-kidney-decline.streamlit.app
+        Opens the PRIORE calculator hosted at spark-kidney-decline.streamlit.app
       </p>
     </section>
 
     <section class="notice" aria-labelledby="notice-heading">
-      <h2 id="notice-heading">Research-use notice</h2>
+      <h2 id="notice-heading">Intended use</h2>
       <p>
-        Research use only. SPARK is not a diagnostic, treatment, referral, or
-        deployment-ready clinical decision-support tool and should not replace clinical
-        judgement, albuminuria testing, or Kidney Failure Risk Equation assessment.
+        PRIORE is intended to support prioritisation of kidney assessment in primary care.
+        It does not diagnose CKD and does not replace urine ACR testing or KFRE when these
+        are indicated.
+      </p>
+      <p>
+        PRIORE was developed and tested using past records. It has not been evaluated in a
+        prospective study.
       </p>
       <p>Do not enter identifiable patient information.</p>
     </section>
@@ -56,11 +60,11 @@
       <h2 id="resources-heading">Links</h2>
       <ul>
         <li>
-          <a href="https://github.com/LouisZBF/SPARK">SPARK source code</a>
+          <a href="https://github.com/LouisZBF/SPARK">PRIORE source code</a>
           <span class="destination">github.com/LouisZBF/SPARK</span>
         </li>
         <li>
-          <a href="https://spark-kidney-decline.streamlit.app">Launch application</a>
+          <a href="https://spark-kidney-decline.streamlit.app">PRIORE calculator</a>
           <span class="destination">spark-kidney-decline.streamlit.app</span>
         </li>
       </ul>
