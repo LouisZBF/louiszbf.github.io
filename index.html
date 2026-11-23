@@ -3,14 +3,14 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Bofan Zhao | PRIORE Kidney Reassessment Prioritisation</title>
-  <meta name="description" content="Academic landing page for PRIORE, a calculator that estimates the likelihood of sustained kidney function decline over the next 3 years to support prioritisation of kidney reassessment in primary care.">
+  <title>Bofan Zhao | RIDE — Risk Index for Decline in eGFR</title>
+  <meta name="description" content="RIDE (Risk Index for Decline in eGFR) estimates the 3-year risk of sustained eGFR decline of 30% or greater from routinely available primary care data, without albuminuria measurements, to help prioritise repeat eGFR and ACR testing.">
   <meta name="author" content="Bofan Zhao">
   <link rel="canonical" href="https://louiszbf.github.io/">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://louiszbf.github.io/">
-  <meta property="og:title" content="Bofan Zhao | PRIORE Kidney Reassessment Prioritisation">
-  <meta property="og:description" content="Academic landing page for PRIORE, a calculator that estimates the likelihood of sustained kidney function decline over the next 3 years to support prioritisation of kidney reassessment in primary care.">
+  <meta property="og:title" content="Bofan Zhao | RIDE — Risk Index for Decline in eGFR">
+  <meta property="og:description" content="RIDE (Risk Index for Decline in eGFR) estimates the 3-year risk of sustained eGFR decline of 30% or greater from routinely available primary care data, without albuminuria measurements, to help prioritise repeat eGFR and ACR testing.">
   <meta property="og:locale" content="en_US">
   <link rel="stylesheet" href="styles.css">
 </head>
@@ -26,33 +26,52 @@
   </header>
 
   <main>
-    <section class="project" aria-labelledby="priore-heading">
-      <h2 id="priore-heading">PRIORE</h2>
-      <p class="expanded-name">Kidney reassessment prioritisation</p>
+    <section class="project" aria-labelledby="ride-heading">
+      <h2 id="ride-heading">RIDE</h2>
+      <p class="expanded-name">Risk Index for Decline in eGFR</p>
       <p>
-        PRIORE estimates the likelihood of sustained kidney function decline over the next
-        3 years using information already available in the primary care record. It does not
-        require a urine albumin-to-creatinine ratio (ACR) result.
+        RIDE estimates the 3-year risk of sustained eGFR decline of 30% or greater. It uses
+        routinely available primary care data and does not require albuminuria measurements.
+      </p>
+      <p>
+        RIDE is intended to help prioritise repeat eGFR and urine albumin-to-creatinine ratio
+        (ACR) testing.
       </p>
       <p class="action">
-        <a class="button" href="https://spark-kidney-decline.streamlit.app" aria-describedby="launch-destination">Open the PRIORE calculator</a>
+        <a class="button" href="https://spark-kidney-decline.streamlit.app" aria-describedby="launch-destination">Open the RIDE calculator</a>
       </p>
       <p class="destination" id="launch-destination">
-        Opens the PRIORE calculator hosted at spark-kidney-decline.streamlit.app
+        Opens the RIDE calculator hosted at spark-kidney-decline.streamlit.app
+      </p>
+    </section>
+
+    <section class="inputs" aria-labelledby="inputs-heading">
+      <h2 id="inputs-heading">Input requirements</h2>
+      <p>All inputs are required.</p>
+      <ul>
+        <li>Age in whole years (18 to 100) and sex (female, male or unknown).</li>
+        <li>Current eGFR (30 to 120 mL/min/1.73 m²) and its date. Enter results reported as &gt;90 as 90.</li>
+        <li>Previous eGFR results from the 2 years (730 days) before the current eGFR, each with its
+          date. Results from the same day are averaged, and daily values below 30 or above 120 are not
+          used. At least 2 days with usable results are needed.</li>
+        <li>Medication records from the previous year: ACE inhibitor or angiotensin receptor blocker,
+          diuretic, and 5 or more different medicines (yes or no).</li>
+      </ul>
+      <p>
+        If an input is missing or an entry is invalid, no estimate is given and the calculator lists
+        what to check. If the inputs are outside the ranges above, no estimate is given and the reason
+        is shown. Missing values are not imputed.
       </p>
     </section>
 
     <section class="notice" aria-labelledby="notice-heading">
       <h2 id="notice-heading">Intended use</h2>
       <p>
-        PRIORE is intended to support prioritisation of kidney assessment in primary care.
-        It does not diagnose CKD and does not replace urine ACR testing or KFRE when these
+        RIDE supports prioritisation of kidney assessment in primary care. It does not diagnose CKD
+        and does not replace urine ACR testing or the Kidney Failure Risk Equation (KFRE) when these
         are indicated.
       </p>
-      <p>
-        PRIORE was developed and tested using past records. It has not been evaluated in a
-        prospective study.
-      </p>
+      <p>RIDE was developed and validated using past records and has not been evaluated prospectively.</p>
       <p>Do not enter identifiable patient information.</p>
     </section>
 
@@ -60,11 +79,11 @@
       <h2 id="resources-heading">Links</h2>
       <ul>
         <li>
-          <a href="https://github.com/LouisZBF/SPARK">PRIORE source code</a>
+          <a href="https://github.com/LouisZBF/SPARK">RIDE source code</a>
           <span class="destination">github.com/LouisZBF/SPARK</span>
         </li>
         <li>
-          <a href="https://spark-kidney-decline.streamlit.app">PRIORE calculator</a>
+          <a href="https://spark-kidney-decline.streamlit.app">RIDE calculator</a>
           <span class="destination">spark-kidney-decline.streamlit.app</span>
         </li>
       </ul>

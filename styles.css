@@ -140,6 +140,17 @@ section,
   color: var(--text-muted);
 }
 
+/* Input requirements */
+
+.inputs ul {
+  margin: 0 0 1rem;
+  padding-left: 1.25rem;
+}
+
+.inputs li {
+  margin-bottom: 0.4rem;
+}
+
 /* Research-use notice */
 
 .notice {
